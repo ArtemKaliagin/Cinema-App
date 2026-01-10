@@ -1,15 +1,18 @@
 import './App.css'
-import Button from './components/Button/Button'
 import Heading from './components/Heading/Heading'
+import InputField from './components/InputField/InputField'
 import Paragraph from './components/Paragraph/Paragraph'
+import NavBar from './layout/NavBar/NavBar'
 
 function App() {
   return (
-    <>
+    <div className='container'>
+      <NavBar />
       <Heading />
       <Paragraph />
-      <Button />
-    </>
+
+      <InputField icon={true} placeholder={'Введите название'} />
+    </div>
   )
 }
 

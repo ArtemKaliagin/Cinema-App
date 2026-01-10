@@ -9,4 +9,11 @@
   border: 2px rgba(123, 110, 246, 1) solid;
   background: rgba(123, 110, 246, 1);
   border-radius: 12px;
+
+  cursor: pointer;
+}
+
+.main-button:hover {
+  border: 2px rgb(99, 88, 198) solid;
+  background: rgb(99, 88, 198);
 }
