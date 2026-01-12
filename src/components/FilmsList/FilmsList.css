@@ -1,0 +1,6 @@
+.films-list {
+ padding: 80px 0px;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 16px;
+}

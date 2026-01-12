@@ -1,0 +1,33 @@
+a {
+  text-decoration: none;
+}
+
+
+.nav-bar {  
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+
+.nav-link {
+  color: rgba(168, 174, 191, 1);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+}
+
+.nav-item-img {
+  margin-left: 8px;
+}
