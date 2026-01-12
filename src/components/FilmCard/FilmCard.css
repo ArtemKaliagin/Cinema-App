@@ -1,0 +1,78 @@
+.film-card {
+  backdrop-filter: blur(80px);
+  background: rgba(32, 40, 62, 0.8);
+  width: 282;
+  height: 520;
+  border-radius: 12px;
+  padding: 8px 8px 16px 8px;
+  position: relative;
+}
+
+.film-card__favs-btn {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 4px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.film-card__favs-btn:hover {
+  background: rgba(33, 33, 33, 0.65);
+}
+
+.film-card__favs-text{
+  color: rgba(255, 173, 73, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.film-card__img {
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.film-card__headingANDadd {
+  padding: 8px;
+}
+
+
+.film-card__heading {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  color: rgba(235, 238, 245, 1);
+
+  margin-bottom: 16px;
+}
+
+
+
+
+.film-card__add-to-favs {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
+.film-card__add-to-favs__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  color: rgba(123, 110, 246, 1);
+}
+
+.film-card__add-to-favs__icon{
+  margin-right: 8px;
+}
