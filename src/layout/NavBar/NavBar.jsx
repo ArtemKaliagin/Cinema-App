@@ -1,25 +1,29 @@
-import './NavBar.css'
+import styles from './NavBar.module.css'
 
 function NavBar() {
   return (
-    <div className='nav-bar'>
+    <div className={styles['nav-bar']}>
       <img src='/public/Bookmark.svg' alt='' />
-      <ul className='nav-list'>
-        <li className='nav-item'>
-          <a href='#' className='nav-link'>
+      <ul className={styles['nav-list']}>
+        <li className={styles['nav-item']}>
+          <a href='#' className={styles['nav-link']}>
             Поиск фильмов
           </a>
         </li>
-        <li className='nav-item'>
-          <a href='#' className='nav-link'>
+        <li className={styles['nav-item']}>
+          <a href='#' className={styles['nav-link']}>
             Мои фильмы
           </a>
         </li>
-        <li className='nav-item'>
-          <a href='#' className='nav-link'>
+        <li className={styles['nav-item']}>
+          <a href='#' className={styles['nav-link']}>
             Войти
           </a>
-          <img className='nav-item-img' src='/public/Exit.svg' alt='' />
+          <img
+            className={styles['nav-item-img']}
+            src='/public/Exit.svg'
+            alt=''
+          />
         </li>
       </ul>
     </div>

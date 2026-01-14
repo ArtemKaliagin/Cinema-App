@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Button from '../Button/Button'
-import './InputField.css'
+import styles from './InputField.module.css'
+import cn from 'classnames'
 
 function InputField({ placeholder, icon }) {
   const [inputData, setInputData] = useState('')
@@ -15,9 +16,11 @@ function InputField({ placeholder, icon }) {
   }
 
   return (
-    <div className='search'>
+    <div className={styles.search}>
       <input
-        className={icon ? 'input-field input-field_icon' : 'input-field'}
+        className={cn(styles['input-field'], {
+          [styles['input-field_icon']]: icon
+        })}
         onChange={inputChangeHandler}
         value={inputData}
         type='text'
@@ -25,7 +28,13 @@ function InputField({ placeholder, icon }) {
         id=''
         placeholder={placeholder}
       />
-      {icon && <img className='search-icon' src='/public/search.svg' alt='' />}
+      {icon && (
+        <img
+          className={styles['search-icon']}
+          src='/public/search.svg'
+          alt=''
+        />
+      )}
       <Button text={'Искать'} onClick={applyButtonHandler} />
     </div>
   )

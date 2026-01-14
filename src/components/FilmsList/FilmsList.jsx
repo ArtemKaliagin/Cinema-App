@@ -1,9 +1,9 @@
 import FilmCard from '../FilmCard/FilmCard'
-import './FilmsList.css'
+import styles from './FilmsList.module.css'
 
 function FilmList({ filmsData }) {
   return (
-    <div className='films-list'>
+    <div className={styles['films-list']}>
       {filmsData.map((item) => (
         <FilmCard
           key={item.id}
