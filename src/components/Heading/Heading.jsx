@@ -1,9 +1,9 @@
 import styles from './Heading.module.css'
 
-function Heading() {
+function Heading({ heading }) {
   return (
     <>
-      <h1 className={styles.heading}>Поиск</h1>
+      <h1 className={styles.heading}>{heading}</h1>
     </>
   )
 }

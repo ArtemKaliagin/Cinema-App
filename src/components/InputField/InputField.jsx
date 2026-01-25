@@ -1,18 +1,9 @@
-import { useState } from 'react'
-import Button from '../Button/Button'
 import styles from './InputField.module.css'
 import cn from 'classnames'
 
-function InputField({ placeholder, icon }) {
-  const [inputData, setInputData] = useState('')
-
+function InputField({ placeholder, icon, inputData, setInputData }) {
   const inputChangeHandler = (e) => {
     setInputData(e.target.value)
-  }
-
-  const applyButtonHandler = () => {
-    console.log(inputData)
-    setInputData('')
   }
 
   return (
@@ -35,7 +26,6 @@ function InputField({ placeholder, icon }) {
           alt=''
         />
       )}
-      <Button text={'Искать'} onClick={applyButtonHandler} />
     </div>
   )
 }

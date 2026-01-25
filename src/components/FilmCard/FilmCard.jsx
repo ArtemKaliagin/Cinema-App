@@ -3,14 +3,14 @@ import styles from './FilmCard.module.css'
 function FilmCard({ name, img, likes }) {
   return (
     <div className={styles['film-card']}>
-      <btn type='button' className={styles['film-card__favs-btn']}>
+      <button type='button' className={styles['film-card__favs-btn']}>
         <img
           className={styles['film-card__favs-icon']}
           src='/public/FilmCardIcons/Vector.svg'
           alt='star'
         />
         <span className={styles['film-card__favs-text']}>{likes}</span>
-      </btn>
+      </button>
       <img className={styles['film-card__img']} src={img} alt={name} />
 
       <div className={styles['film-card__headingANDadd']}>

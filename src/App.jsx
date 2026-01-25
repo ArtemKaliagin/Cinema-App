@@ -1,8 +1,7 @@
 import './App.css'
 import FilmList from './components/FilmsList/FilmsList'
-import Heading from './components/Heading/Heading'
-import InputField from './components/InputField/InputField'
-import Paragraph from './components/Paragraph/Paragraph'
+import FindFilmInput from './components/FindFilmInput/FindFilmInput'
+import LoginField from './components/LoginField/LoginField'
 import FILM_DATA from './data/DATA'
 import NavBar from './layout/NavBar/NavBar'
 
@@ -10,9 +9,8 @@ function App() {
   return (
     <div className='container'>
       <NavBar />
-      <Heading />
-      <Paragraph />
-      <InputField icon={true} placeholder={'Введите название'} />
+      <LoginField />
+      <FindFilmInput />
 
       <FilmList filmsData={FILM_DATA} />
     </div>
