@@ -1,0 +1,30 @@
+
+.input-field {
+  width: 348px;
+  padding: 24px 16px;
+  border: 1px solid rgba(50, 59, 84, 1);
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  color: rgba(194, 200, 215, 1);
+  margin-right: 8px;
+}
+
+.input-field::placeholder {
+  color: rgba(71, 80, 105, 1);
+  font-size: 14px;
+}
+
+.search {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 20px
+}
+
+
+.input-field_icon {
+  padding-left: 56px;
+}
