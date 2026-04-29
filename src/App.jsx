@@ -7,11 +7,11 @@ import NavBar from './layout/NavBar/NavBar'
 
 function App() {
   return (
+    // text
     <div className='container'>
       <NavBar />
       <LoginField />
       <FindFilmInput />
-
       <FilmList filmsData={FILM_DATA} />
     </div>
   )
